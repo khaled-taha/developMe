@@ -1,0 +1,38 @@
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    text-align: center;
+    padding: 1em;
+}
+
+.categories, .sub-categories, .podcasts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.category-box, .sub-category-box, .video-box {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.category-box:hover, .sub-category-box:hover, .video-box:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .category-box, .sub-category-box, .video-box {
+        width: 100%;
+    }
+}
