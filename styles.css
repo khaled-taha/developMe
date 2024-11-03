@@ -1,6 +1,8 @@
 /* Basic Styles */
 body {
     font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff; /* Change text color to white for better contrast */
 }
 
 header, footer {
@@ -15,7 +17,8 @@ header, footer {
 }
 
 .category-box, .sub-category-box, .video-box {
-    background-color: #f0f0f0;
+    background-color: #222; /* Dark gray for boxes to distinguish from the black background */
+    color: #fff;
     border-radius: 10px;
     width: 100%;
     max-width: 300px;
