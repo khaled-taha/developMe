@@ -33,6 +33,35 @@ header, footer {
     transform: scale(1.05);
 }
 
+/* Cool Button Style */
+button {
+    background-color: #444; /* Dark gray for the button background */
+    color: #fff; /* White text */
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid #888; /* Border with a medium gray color */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Subtle glow effect */
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #555; /* Slightly lighter background on hover */
+    border-color: #fff; /* Change border to white on hover */
+    color: #ffd700; /* Gold color for the text on hover */
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.6); /* Brighter glow on hover */
+    transform: translateY(-3px); /* Lift button slightly on hover */
+}
+
+/* Button Active (Pressed) Effect */
+button:active {
+    transform: translateY(1px); /* Slight push down when clicked */
+    box-shadow: 0 0 5px rgba(255, 215, 0, 0.8); /* Dim the glow on active */
+}
+
 /* Responsive Media Queries */
 @media (max-width: 768px) {
     .category-box, .sub-category-box, .video-box {
